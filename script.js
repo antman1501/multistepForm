@@ -63,7 +63,7 @@
         if(name.value!='' && email.value!='' && mobile.value!='')
         {
           alert.style.display='none';
-          let verifyName=new RegExp("^([a-zA-Z]{0,})$");
+          let verifyName=new RegExp("^([a-zA-Z ]{0,})$");
           let verifyEmail=new RegExp("^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$");
           let verifyPhoneNo=new RegExp("^([0-9]{10})$");
           if(verifyName.test(name.value)&&verifyEmail.test(email.value)&&verifyPhoneNo.test(mobile.value))
