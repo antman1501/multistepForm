@@ -302,8 +302,8 @@
         fourthAction.style.display='';
         butfour.style.backgroundColor='hsl(206, 94%, 87%)';
         butthree.style.backgroundColor='transparent';
-        butfour.style.borderColor='white';
-        butthree.style.borderColor='hsl(206, 94%, 87%)';
+        butfour.style.borderColor='hsl(206, 94%, 87%)';
+        butthree.style.borderColor='white';
         butfour.style.color='hsl(213, 96%, 18%)';
         butthree.style.color='hsl(217, 100%, 97%)';
         //console.log(addOns[0]);
