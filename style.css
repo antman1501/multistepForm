@@ -64,7 +64,7 @@
         border-color: var(--Light_gray);
         position: relative;
         border-radius: 10px;
-        padding: 20px;
+        padding: 10px;
         width:30%;
         height:30vh;
       }
@@ -304,5 +304,8 @@
           left:5%;
           border-radius: 10px;
           box-shadow: 2px 2px 5px var(--Light_gray);
+        }
+        .plan{
+          padding: 5px;
         }
       }
