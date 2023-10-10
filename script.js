@@ -1,3 +1,7 @@
+      let firstAction=document.querySelector('.action-page-1');
+      let secondAction=document.querySelector('.action-page-2');
+      let thirdAction=document.querySelector('.action-page-3');
+      let fourthAction=document.querySelector('.action-page-4');
       let firstPage=document.querySelector('.first');
       let secondPage=document.querySelector('.second');
       let thirdpage=document.querySelector('.third');
@@ -64,12 +68,12 @@
           let verifyPhoneNo=new RegExp("^([0-9]{10})$");
           if(verifyName.test(name.value)&&verifyEmail.test(email.value)&&verifyPhoneNo.test(mobile.value))
           {
-            firstPage.style.display='none';
-            secondPage.style.display='';
+            firstAction.style.display='none';
+            secondAction.style.display='';
             buttwo.style.backgroundColor='hsl(206, 94%, 87%)';
             butone.style.backgroundColor='transparent'
-            buttwo.style.border='none';
-            butone.style.border='';
+            buttwo.style.borderColor='hsl(206, 94%, 87%)';
+            butone.style.borderColor='white';
             buttwo.style.color='hsl(213, 96%, 18%)';
             butone.style.color='hsl(217, 100%, 97%)';
             messageName.style.display='none';
@@ -117,12 +121,12 @@
         }
       })
       goback1.addEventListener('click',()=>{
-        firstPage.style.display='';
-        secondPage.style.display='none';
+        firstAction.style.display='';
+        secondAction.style.display='none';
         buttwo.style.backgroundColor='transparent';
         butone.style.backgroundColor='hsl(206, 94%, 87%)';
-        buttwo.style.border='';
-        butone.style.border='none';
+        buttwo.style.borderColor='white';
+        butone.style.borderColor='hsl(206, 94%, 87%)';
         buttwo.style.color='hsl(217, 100%, 97%)';
         butone.style.color='hsl(213, 96%, 18%)';
       });
@@ -222,12 +226,12 @@
       })
       nextstep2.addEventListener('click',()=>{
         if(plantype!=''){
-            secondPage.style.display='none';
-            thirdpage.style.display='';
+            secondAction.style.display='none';
+            thirdAction.style.display='';
             butthree.style.backgroundColor='hsl(206, 94%, 87%)';
             buttwo.style.backgroundColor='transparent';
-            butthree.style.border='none';
-            buttwo.style.border='';
+            butthree.style.borderColor='hsl(206, 94%, 87%)';
+            buttwo.style.borderColor='white';
             butthree.style.color='hsl(213, 96%, 18%)';
             buttwo.style.color='hsl(217, 100%, 97%)';
             planAppliedFor.innerText=plantype+'('+plantime+')';
@@ -235,12 +239,12 @@
         }
       })
       goback2.addEventListener('click',()=>{
-        secondPage.style.display='';
-        thirdpage.style.display='none';
+        secondAction.style.display='';
+        thirdAction.style.display='none';
         butthree.style.backgroundColor='transparent';
         buttwo.style.backgroundColor='hsl(206, 94%, 87%)'
-        butthree.style.border='';
-        buttwo.style.border='none';
+        butthree.style.borderColor='white';
+        buttwo.style.borderColor='hsl(206, 94%, 87%)';
         butthree.style.color='hsl(217, 100%, 97%)';
         buttwo.style.color='hsl(213, 96%, 18%)';
       })
@@ -294,12 +298,12 @@
         }
       })
       nextstep3.addEventListener('click',()=>{
-        thirdpage.style.display='none';
-        fourthpage.style.display='';
+        thirdAction.style.display='none';
+        fourthAction.style.display='';
         butfour.style.backgroundColor='hsl(206, 94%, 87%)';
         butthree.style.backgroundColor='transparent';
-        butfour.style.border='none';
-        butthree.style.border='';
+        butfour.style.borderColor='white';
+        butthree.style.borderColor='hsl(206, 94%, 87%)';
         butfour.style.color='hsl(213, 96%, 18%)';
         butthree.style.color='hsl(217, 100%, 97%)';
         //console.log(addOns[0]);
@@ -314,26 +318,26 @@
         // console.log(addOns);
       })
       changes.addEventListener('click',()=>{
-        secondPage.style.display='';
-        fourthpage.style.display='none';
+        secondAction.style.display='';
+        fourthAction.style.display='none';
         butfour.style.backgroundColor='transparent';
         buttwo.style.backgroundColor='hsl(206, 94%, 87%)'
-        butfour.style.border='';
-        buttwo.style.border='none';
+        butfour.style.borderColor='white';
+        buttwo.style.borderColor='hsl(206, 94%, 87%)';
         butfour.style.color='hsl(217, 100%, 97%)';
         buttwo.style.color='hsl(213, 96%, 18%)';
       })
       goback3.addEventListener('click',()=>{
-        thirdpage.style.display='';
-        fourthpage.style.display='none';
+        thirdAction.style.display='';
+        fourthAction.style.display='none';
         butfour.style.backgroundColor='transparent';
         butthree.style.backgroundColor='hsl(206, 94%, 87%)'
-        butfour.style.border='';
-        butthree.style.border='none';
+        butfour.style.borderColor='white';
+        butthree.style.borderColor='hsl(206, 94%, 87%)';
         butfour.style.color='hsl(217, 100%, 97%)';
         butthree.style.color='hsl(213, 96%, 18%)';
       })
       confirm.addEventListener('click',()=>{
-        fourthpage.style.display='none';
+        fourthAction.style.display='none';
         thankyou.style.display='';
       })
