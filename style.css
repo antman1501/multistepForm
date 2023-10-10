@@ -1,0 +1,240 @@
+:root{
+   --Marine_blue: hsl(213, 96%, 18%);
+--Purplish_blue: hsl(243, 100%, 62%);
+--Pastel_blue: hsl(228, 100%, 84%);
+--Light_blue: hsl(206, 94%, 87%);
+--Strawberry_red: hsl(354, 84%, 57%);
+--Cool_gray: hsl(231, 11%, 63%);
+--Light_gray: hsl(229, 24%, 87%);
+--Magnolia: hsl(217, 100%, 97%);
+--Alabaster: hsl(231, 100%, 99%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+        box-sizing: border-box;
+        color: var(--Marine_blue);
+        font-family: 'Ubuntu', sans-serif;
+        /* font-size: 16px; */
+        /* border: 1px solid red; */
+      }
+      
+      body{
+        background-color: var(--Magnolia);
+        padding-left:100px;
+        padding-right: 100px;
+        padding-top:50px;
+        padding-bottom: 50px;
+      }
+      .container{
+        width:80vw;
+        height:85vh;
+        display:flex;
+        padding:10px;
+        background-color: white;
+        border-radius:20px;
+      }
+      .information{
+        /* background-color: blue; */
+        width:100%;
+        padding: 50px;
+        padding-bottom: 0px;
+        padding-top: 0;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+      .plantype{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+      }
+      .plan{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-style: solid;
+        border-color: var(--Light_gray);
+        position: relative;
+        border-radius: 10px;
+        padding: 20px;
+        width:30%;
+        height:30vh;
+      }
+      .planinfo{
+        position:absolute;
+        bottom:0%;
+      }
+      .plantime{
+        background-color: var(--Magnolia);
+        display:flex;
+        justify-content: center;
+        margin-top:3%;
+      }
+      .addon{
+        display:flex;
+        flex-direction: column;
+      }
+      .addon-description{
+        border:solid;
+        display:flex;
+        align-items: center;
+        border-radius: 10px;
+        border-color: var(--Magnolia);
+        margin:5px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding:10px;
+        padding-bottom: 20px;
+        height:12vh;
+      }
+      .addon-option{
+        width:80%;
+      }
+      .check{
+        margin-right: 5%;
+        width:auto;
+        height:auto;
+      }
+      .addon-price{
+
+      }
+      .toggle {
+            position : relative ;
+            display : flex;
+            justify-content: center;
+            align-self: center;
+            width : 10%;
+            height : 40%;
+            background-color: var(--Marine_blue);
+            border-radius: 30px;
+            border: none;
+        }
+               
+        /* After slide changes */
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 90%;
+            border-radius: 50%;
+            background-color: var(--Magnolia);
+            top: 1px; 
+            left: 1px;
+            transition:  all 0.5s;
+        }
+         .checkbox:checked + .toggle::after {
+            left : 67% ;
+        }
+        /* Checkbox checked toggle label bg color */
+        /* .checkbox:checked + .toggle {
+            background-color: hsl(213, 96%, 18%);
+        } */
+               
+        /* Checkbox vanished */
+        .checkbox { 
+            display : none;
+        }
+      .steps{
+        background-image: url(./assets/images/bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:20rem;
+        border-radius: 10px;
+      }
+      .btn{
+        display:flex;
+      }
+      .step-info{
+        display: flex;
+        flex-direction: column;
+        padding-left:40px;
+      }
+      .foot{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .nextstep{
+        background-color: var(--Marine_blue);
+        color: var(--White);
+        width:10rem;
+        font-size: 16px;
+        border-radius: 10px;
+        border:none;
+      }
+      .payment{
+        background-color: var(--Magnolia);
+        border-radius: 10px;
+        padding:20px;
+      }
+      .summary-plan{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid;
+        border-color: var(--Cool_gray);
+      }
+      .addon-summary-type{
+        display:flex;
+        justify-content: space-between;
+      }
+      .totalcost{
+        display:flex;
+        justify-content: space-between;
+        padding:20px;
+      }
+      .thankyou{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:50px;
+      }
+      form{
+        width:100%;
+        height:75%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        position: relative;
+        /* background-color: aqua; */
+      }
+      input{
+        border-radius: 5px;
+        padding:10px;
+        margin-top:5px;
+        margin-bottom: 5px;
+      }
+      label{
+        font-weight: 500;
+        margin-top:5px;
+        margin-bottom: 5px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      button{
+        border-radius: 20px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: var(--Magnolia);
+        color: var(--Magnolia);
+        font-size: 16px;;
+        margin-top:15px;
+      }
+      h1{
+        margin-bottom:0;
+      }
+      h4{
+        color:var(--Magnolia);
+        margin:0;
+      }
+      p{
+        font-size: 15px;
+        color:var(--Magnolia);
+      }
+      button:hover{
+        background-color: var(--Light_blue);
+      }
